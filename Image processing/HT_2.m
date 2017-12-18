@@ -1,5 +1,7 @@
-function [H,T,R] = HT_2(im)
-
+function [H,T,R] = HT(im)
+% Hough Transform
+% input - image
+% outputs : H - Hough transform, T - theta values , R - rho values
 [r,c] = size(im);
 T = -90:1:89;
 D = floor( (r^2 + c^2)^0.5 );
